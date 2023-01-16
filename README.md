@@ -26,7 +26,8 @@ With the standard_user, the expected flows that should be automated are:
 3. Add an item to Cart
 4. Remove an item from the Cart
 5. Checkout an item in the Cart
-   With the problem_user, the expected flows that should be automated are:
+   
+With the problem_user, the expected flows that should be automated are:
 6. Log In
 7. Log Out
 8. Add an item to Cart
