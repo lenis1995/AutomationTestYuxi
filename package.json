@@ -1,0 +1,25 @@
+{
+  "name": "automationtestyuxi",
+  "version": "1.0.0",
+  "description": "Test Automation Challenge from Yuxi Global",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx nightwatch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lenis1995/AutomationTestYuxi.git"
+  },
+  "author": "Alejandro Lenis Restrepo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lenis1995/AutomationTestYuxi/issues"
+  },
+  "homepage": "https://github.com/lenis1995/AutomationTestYuxi#readme",
+  "devDependencies": {
+    "nightwatch": "^2.6.10"
+  },
+  "dependencies": {
+    "chromedriver": "^109.0.0"
+  }
+}
