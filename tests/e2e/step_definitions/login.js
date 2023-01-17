@@ -5,9 +5,9 @@ Given(/^the user is at Login page$/, () => {
   return loginPage.navigate().maximizeWindow();
 });
 
-When(/^the user enter valid credentials$/, () => {
+When(/^the user enter valid (.*) and (.*)$/, (username, password) => {
   const loginPage = browser.page.Login();
-  return loginPage.fillOutLoginForm("standard_user", "secret_sauce");
+  return loginPage.fillOutLoginForm(username, password);
 });
 
 When(/^the user opens navigation menu$/, () => {

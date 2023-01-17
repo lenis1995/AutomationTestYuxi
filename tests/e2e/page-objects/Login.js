@@ -7,10 +7,11 @@ const elements = {
 
 const loginCommands = {
   fillOutLoginForm: function (username, password) {
-    return this.waitForElementVisible("@username")
-      .waitForElementVisible("@password")
-      .setValue("@username", username)
-      .setValue("@password", password)
+    return this.expect
+      .element("@username")
+      .to.be.visible.setValue("@username", username)
+      .expect.element("@password")
+      .to.be.visible.setValue("@password", password)
       .click("@submitButton");
   },
   verifyLoginUrl: function () {
