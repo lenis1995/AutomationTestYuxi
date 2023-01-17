@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/lenis1995/AutomationTestYuxi#readme",
   "devDependencies": {
+    "@cucumber/cucumber": "^8.10.0",
     "nightwatch": "^2.6.10"
   },
   "dependencies": {
