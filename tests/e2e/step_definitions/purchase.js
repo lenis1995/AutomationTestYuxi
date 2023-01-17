@@ -1,4 +1,5 @@
 const { Then, When } = require("@cucumber/cucumber");
+const { firstName, lastName, postalCode } = require("../data/checkoutData");
 
 When(/^the user proceed to checkout$/, () => {
   const cartPage = browser.page.Cart();
@@ -9,7 +10,7 @@ When(/^fill out checkout information$/, () => {
   const checkoutPage = browser.page.CheckoutFirstStep();
   return checkoutPage
     .verifyCheckoutFirstStepPageTitle()
-    .fillCheckoutForm("lenis", "alejo", "05147");
+    .fillCheckoutForm(firstName, lastName, postalCode);
 });
 
 When(/^validate the checkout details$/, () => {
