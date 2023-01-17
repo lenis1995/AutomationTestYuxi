@@ -14,6 +14,7 @@ module.exports = {
     options: {
       feature_path: "tests/e2e/*/*.feature",
       auto_start_session: true,
+      parallel: 2,
     },
   },
 
