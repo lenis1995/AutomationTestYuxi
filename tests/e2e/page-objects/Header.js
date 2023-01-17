@@ -15,11 +15,14 @@ const headerCommands = {
   verifyItemRemovedFromCart: function () {
     return this.expect.element("@itemsBadge").to.not.be.present;
   },
-  logout: function () {
+  openNavigationMenu: function () {
     return this.expect
       .element("@hamburgerButton")
-      .to.be.visible.click("@hamburgerButton")
-      .expect.element("@logoutButton")
+      .to.be.visible.click("@hamburgerButton");
+  },
+  clickLogout: function () {
+    return this.expect
+      .element("@logoutButton")
       .to.be.visible.click("@logoutButton");
   },
   navigateToCartPage: function () {

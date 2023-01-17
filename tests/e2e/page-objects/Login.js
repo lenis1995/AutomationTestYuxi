@@ -2,6 +2,7 @@ const elements = {
   username: "#user-name",
   password: "#password",
   submitButton: "#login-button",
+  logo: ".login_logo",
 };
 
 const loginCommands = {
@@ -11,6 +12,12 @@ const loginCommands = {
       .setValue("@username", username)
       .setValue("@password", password)
       .click("@submitButton");
+  },
+  verifyLoginUrl: function () {
+    return this.expect.url().equals(this.api.launchUrl);
+  },
+  verifyLoginLogoIsVisible: function () {
+    return this.expect.element("@logo").to.be.visible;
   },
 };
 

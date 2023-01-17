@@ -34,11 +34,6 @@ const checkoutCommands = {
       .assert.textContains("@taxLabel", "1.28")
       .assert.textContains("@totalLabel", "17.27");
   },
-  verifyCheckoutSecondStepPageTitle: function () {
-    return this.expect
-      .element(header.elements.pageTitle)
-      .text.equals("CHECKOUT: OVERVIEW");
-  },
   navigateToCheckoutComplete: function () {
     return this.expect
       .element("@finishPurchaseButton")

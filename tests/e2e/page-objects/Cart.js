@@ -24,16 +24,19 @@ const cartCommands = {
       .element("@itemName")
       .to.be.visible.expect.element("@itemDescription")
       .to.be.visible.expect.element("@itemPrice")
-      .to.be.visible.and.value.contains("29.99")
+      .to.be.visible.and.text.contains("15.99")
       .expect.element("@itemQuantity")
-      .to.be.visible.and.value.equals("1");
+      .to.be.visible.and.text.equals("1");
   },
-  navigateToCheckout: function () {
+  verifyItemRemovedFromCart: function () {
+    return this.expect.element("@cartItemContainer").to.not.be.present;
+  },
+  proceedToCheckout: function () {
     return this.expect
       .element("@checkoutButton")
       .to.be.visible.click("@checkoutButton");
   },
-  removeItemToCart: function () {
+  removeItemFromCart: function () {
     return this.expect
       .element("@removeItemButton")
       .to.be.visible.click("@removeItemButton");
