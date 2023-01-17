@@ -4,7 +4,7 @@
   "description": "Test Automation Challenge from Yuxi Global",
   "main": "index.js",
   "scripts": {
-    "test": "npx nightwatch"
+    "test": "npx nightwatch --format @cucumber/pretty-formatter"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,7 @@
   "homepage": "https://github.com/lenis1995/AutomationTestYuxi#readme",
   "devDependencies": {
     "@cucumber/cucumber": "^8.10.0",
+    "@cucumber/pretty-formatter": "^1.0.0",
     "nightwatch": "^2.6.10"
   },
   "dependencies": {
